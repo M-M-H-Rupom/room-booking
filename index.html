@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="rmbk_main">
+        <div class="rmbk_container">
+            <div class="rmbk_booking_title">
+                <span>Gym room booking</span>
+            </div>
+            <!-- here room booking input field  -->
+            <div class="rmbk_field_content">
+                <div class="date_field rm_field">
+                    <label for="">
+                        <span>Date</span>
+                        <input type="date" name="field_date" id="field_date">
+                    </label>
+                </div>
+                <div class="time_field rm_field">
+                    <label for=""> 
+                        <span>Time</span>
+                        <input type="time" name="field_time" id="field_time">
+                    </label>
+                </div>
+                <div class="room_field rm_field">
+                    <label for=""> 
+                        <span>Room</span>
+                        <input type="text" name="field_room" id="field_room">
+                    </label>
+                </div>
+                <div class="duration_field rm_field">
+                    <label for=""> 
+                        <span>Duration</span>
+                        <input type="text" name="field_duration" id="field_duration">
+                    </label>
+                </div>
+                <div class="participants_field rm_select_field">
+                    <label for=""> 
+                        <span>Participants</span>
+                        <input type="text" name="field_participants" id="field_participants">
+                    </label>
+                </div>
+            </div>
+            <!--  -->
+            <!-- add booking button  -->
+            <div class="rmbk_add_booking_btn rmbk_btn">
+                <span>Add Booking</span>
+            </div>
+            <!--  -->
+            <!-- Room booking data table -->
+            <div class="rmbk_room_booking_data_table">
+                <div class="rmbk_data_table_title">
+                    <span>Gym room booking</span>
+                </div>
+                <div class="rmbk_booking_content">
+                    <table class="rmbk_table_content">
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Room</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>07-07-2024</td>
+                            <td>10:00</td>
+                            <td>Room 1</td>
+                            <td>60 minutes</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- cls -->
+             <!-- continue button  -->
+            <div class="rmbk_continue_btn rmbk_btn">
+                <span>Continue</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.rmbk_container *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root {
+    --primary-color: #110C41;
+    --white: #ffffff;
+  }
+.rmbk_main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.rmbk_container{
+    width: 70%;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    min-height: 700px;
+}
+.rmbk_booking_title{
+    font-size: 22px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.rmbk_field_content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/* input field data time room duration participants*/
+.rm_field{
+    /* width: 48%; */
+    width: 100%;
+    margin-top: 16px;
+}
+.rm_field label span,
+.rm_select_field label span{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.rm_field label,
+.rm_select_field label{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.rm_field label input[type='text'],
+.rm_field label input[type='date'],
+.rm_select_field label input[type='text']{
+    padding: 8px;
+}
+.rm_field label input[type='time']{
+    padding: 6px;
+
+}
+/*  cls */
+/* participants_field div*/
+.rm_select_field{
+    width: 100%;
+    margin-top: 16px;
+}
+/* cls */
+
+/* data table css */
+.rmbk_data_table_title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    margin: 24px 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+.rmbk_table_content {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid#000000;
+    padding: 12px;
+    min-width: 450px;
+  }
+  
+/* .rmbk_table_content th,  */
+.rmbk_table_content td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid#000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+.rmbk_table_content th{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid#000000;
+}
+.rmbk_booking_content{
+    overflow-x: auto;
+}
+/* button css */
+.rmbk_btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+}
+.rmbk_btn span{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+/* cls */
+
+/* for min width 1024px  */
+@media (min-width: 768px) {
+
+    .rmbk_field_content{
+        flex-direction: row;
+    }
+    .rm_field{
+        width: 48%;
+    }
+    .rmbk_btn span{
+        width: 20%;
+        text-align: center;
+        padding: 10px 12px;
+    }
+    
+}
